@@ -35,8 +35,6 @@ jobs:
           # -----------------------------------------------------------------
           # ¡AGREGAR ESTO PARA FORZAR LA COMPILACIÓN MANUAL!
           # -----------------------------------------------------------------
-          skip_app_build: true
-          skip_api_build: true
           app_build_command: "npm install --legacy-peer-deps && npm run build"
           working_directory: "/"
 
@@ -51,6 +49,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GREEN_BUSH_098DE5E0F }}
           action: "close"
+
 
 
 
